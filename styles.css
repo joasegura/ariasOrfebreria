@@ -1,0 +1,528 @@
+/* Estilos personalizados */
+:root {
+    --primary-color: #2a2a2a;
+    --secondary-color: #8b5e3c;
+    --accent-color: #d4a373;
+    --text-color: #ffffff;
+    --bg-dark: #1a1a1a;
+    --section-bg: #2a2a2a;
+}
+
+body {
+    padding-top: 0;
+    background-color: #2a2a2a;
+    
+}
+
+/* Modifica las variables de color */
+
+
+/* Estilos base 
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-color);
+    padding-top: 0;
+}*/
+
+/* Ajustes para todas las secciones */
+section {
+    background-color: var(--section-bg);
+    padding: 4rem 0;
+}
+
+/* Excepción para secciones con fondo claro */
+section.bg-light {
+    background-color: var(--primary-color) !important;
+    color: var(--text-color);
+}
+
+#evolution {
+    background-color: var(--section-bg) !important;
+}
+
+#evolution h2,
+#evolution h4,
+#evolution p {
+    color: var(--text-color) !important;
+}
+
+/* Ajustes para tarjetas */
+.card {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.list-group-item {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-color: rgba(255,255,255,0.1);
+}
+
+/* Estilos para nueva sección */
+#nueva-seccion h2,
+#nueva-seccion p,
+#nueva-seccion .lead {
+    color: var(--text-color) !important;
+    opacity: 0.9;
+}
+
+#nueva-seccion {
+    background: linear-gradient(to right, #1a1a1a, #2a2a2a);
+    position: relative;
+    overflow: hidden;
+}
+
+#nueva-seccion .lead {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+#nueva-seccion .divider-icon {
+    color: var(--accent-color) !important;
+    text-shadow: 0 0 10px rgba(212, 163, 115, 0.3);
+}
+
+.divider-custom {
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider-line {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: var(--accent-color);
+    border-radius: 1rem;
+}
+
+.divider-icon {
+    color: var(--accent-color);
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+/* Timeline */
+.timeline-item {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    background-color: var(--primary-color) !important;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.timeline-item img {
+    border: 2px solid var(--accent-color);
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0,0,0,0.9) !important;
+}
+
+.navbar {
+    z-index: 1030;
+    transition: all 0.3s ease;
+}
+
+.navbar-scrolled {
+    background-color: rgba(0,0,0,0.9) !important;
+}
+
+.navbar-logo {
+    max-height: 50px;  /* Altura máxima */
+    width: auto;       /* Ancho proporcional */
+    transition: all 0.3s ease; /* Efecto suave al hacer hover */
+}
+
+/* Opcional: Efecto hover */
+.navbar-logo:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .navbar-logo {
+        max-height: 40px;
+    }
+}
+
+/* Textos específicos */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+    font-family: "Imperial Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2; /* Mejor espaciado entre líneas */
+    letter-spacing: 1px; /* Pequeño espacio entre letras para mejor legibilidad */
+}
+
+.titulo-navbar{
+    color: var(--text-color);
+    font-family: "Charm", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-contact{
+    color: #f8f9fa !important;
+    opacity: 0.8;
+    font-family: "Charm", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* Tamaños personalizados */
+.titulo-arte {
+    font-size: 3.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.lead{
+    color: var(--text-color);
+    font-family: "Charm", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2; /* Mejor espaciado entre líneas */
+    letter-spacing: 1px; /* Pequeño espacio entre letras para mejor legibilidad */
+}
+
+/* Estilos para imágenes del timeline */
+.timeline-image {
+    max-width: 400px; /* Ancho máximo */
+    max-height: 600px; /* Altura máxima */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.timeline-image:hover {
+    transform: scale(1.03);
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+    .timeline-image {
+        max-width: 300px;
+        max-height: 200px;
+    }
+}
+
+.titulo-comienzos{
+    font-size: 3.5rem;
+}
+
+.titulo-galeria{
+    font-size: 3.5rem;
+}
+
+/* Igualar altura de las tarjetas */
+.card-img-top-container {
+    height: 100px; /* Altura fija para todas las imágenes */
+    overflow: hidden;
+    position: relative;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+    transition: transform 0.3s ease;
+}
+
+/* Mantener la misma altura para todas las tarjetas */
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1; /* Distribución uniforme del espacio */
+}
+
+
+/* Contenedor para control de tamaño */
+.gallery-img-container {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Altura fija */
+    overflow: hidden;
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Estilo para las imágenes */
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+/* Ajuste del overlay */
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Efecto hover mejorado */
+.gallery-img-container:hover .gallery-img {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .gallery-img-container {
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-img-container {
+        height: 200px;
+    }
+}
+
+
+/* Ajustes para el timeline en desktop */
+@media (min-width: 768px) {
+    .timeline::before {
+        background: var(--accent-color);
+    }
+    .timeline::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 3px;
+        height: 100%;
+        background: var(--accent-color);
+    }
+    
+    .timeline-item {
+        width: 45%;
+    }
+    
+    .timeline-item:nth-child(odd) {
+        margin-left: 55%;
+    }
+    
+    .timeline-item:nth-child(even) {
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    h2 {
+        font-size: 3rem;
+    }
+    
+    h3 {
+        font-size: 2.5rem;
+    }
+    
+    h4 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Galería */
+.gallery-overlay {
+    background: rgba(0,0,0,0.7);
+}
+
+/* Añadir estas reglas específicas */
+#about p,
+#about li,
+#about .list-unstyled,
+#about .lead {
+    color: var(--text-color) !important;
+    opacity: 0.9;
+}
+
+#about .bi-check2-circle {
+    color: var(--accent-color) !important;
+}
+
+
+/* Estilos para sección de contacto */
+#contacto {
+    border-top: 2px solid var(--accent-color);
+    background: linear-gradient(to right, #1a1a1a, #2a2a2a);
+}
+
+.contact-item {
+    padding: 2rem;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    background: rgba(255,255,255,0.05);
+    transform: translateY(-5px);
+}
+
+.text-accent {
+    color: var(--accent-color) !important;
+}
+
+.contact-item a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: var(--accent-color) !important;
+}
+
+/* Footer */
+footer {
+    background-color: #000 !important;
+}
+
+.carousel-item {
+    height: 70vh;
+    margin-top: 0px;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.gallery-img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+.timeline {
+    position: relative;
+    padding: 40px 0;
+}
+
+.timeline-item {
+    padding: 20px;
+    margin-bottom: 30px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    position: relative;
+}
+
+
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.timeline {
+    position: relative;
+    padding: 50px 0;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 30px;
+    margin: 20px 0;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.timeline-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 15px;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .overlay-text {
+    transform: translateY(0);
+}
+
+.gallery-grid img {
+    margin-bottom: 1rem;
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.02);
+}
+
+.modal-img {
+    width: 100%;
+    height: 80vh;
+    object-fit: contain;
+}
