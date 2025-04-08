@@ -14,6 +14,43 @@ body {
     
 }
 
+  /* Oculta la barra superior de Google Translate */
+  .goog-te-banner-frame.skiptranslate {
+    display: none !important;
+  }
+
+  /* Ajusta el cuerpo del sitio para evitar el espacio en blanco que deja */
+  body {
+    top: 0px !important;
+  }
+
+  /* Oculta el logo de Google y el selector de idiomas */
+  .goog-logo-link, 
+  .goog-te-gadget {
+    display: none !important;
+  }
+
+  #goog-gt-tt, 
+  .goog-te-balloon-frame {
+    display: none !important;
+  }
+
+  .goog-text-highlight {
+    background: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Evita problemas de layout */
+  iframe.goog-te-banner-frame {
+    display: none !important;
+  }
+
+  .skiptranslate {
+    display: none !important;
+  }
+
+
+
 /* Modifica las variables de color */
 
 
@@ -39,7 +76,7 @@ section.bg-light {
 #evolution {
     background-color: var(--section-bg) !important;
 }
-
+  
 #evolution h2,
 #evolution h4,
 #evolution p {
@@ -131,7 +168,7 @@ section.bg-light {
 }
 
 .navbar-logo {
-    max-height: 50px;  /* Altura máxima */
+    max-height: 75px;  /* Altura máxima */
     width: auto;       /* Ancho proporcional */
     transition: all 0.3s ease; /* Efecto suave al hacer hover */
 }
